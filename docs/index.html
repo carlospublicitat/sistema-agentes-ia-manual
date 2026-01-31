@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manual Web — Instalación / Usuario / Operación</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <button id="menuToggle" class="icon-btn" aria-label="Mostrar/ocultar menú" aria-expanded="true" title="Menú (Ctrl+M)">☰</button>
+
+    <div class="brand">
+      <div class="brand-title">Manual Web</div>
+      <div class="brand-subtitle">Instalación · Usuario · Operación</div>
+    </div>
+
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Buscar en TODO el manual…" aria-label="Buscar" />
+      <button id="searchClear" class="icon-btn" aria-label="Borrar búsqueda" title="Borrar">✕</button>
+    </div>
+  </header>
+
+  <div class="app">
+    <aside id="sidebar" class="sidebar" role="navigation" aria-label="Índice">
+      <div class="tabs" role="tablist" aria-label="Secciones">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="instalacion">Instalación</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="usuario">Usuario</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="operacion">Operación</button>
+      </div>
+
+      <div class="sidebar-hint">
+        El buscador de arriba no filtra este menú: busca en el contenido completo y te lleva al punto exacto.
+      </div>
+
+      <nav id="toc" class="toc" aria-label="Contenido">
+        <!-- Se rellena por JS -->
+      </nav>
+    </aside>
+
+    <main id="content" class="content" role="main" tabindex="-1">
+      <section class="doc is-active" data-doc="instalacion">
+        <h1 id="instalacion">Manual de instalación</h1>
+
+        <h2 id="instalacion-alcance">Alcance</h2>
+        <p>Contenido de ejemplo. Sustituye estos textos por tu contenido real.</p>
+
+        <h2 id="instalacion-requisitos">Requisitos</h2>
+        <ul>
+          <li>Requisito 1</li>
+          <li>Requisito 2</li>
+        </ul>
+
+        <h2 id="instalacion-pasos">Pasos</h2>
+        <h3 id="instalacion-pasos-1">Paso 1</h3>
+        <p>Explicación.</p>
+        <h3 id="instalacion-pasos-2">Paso 2</h3>
+        <p>Explicación.</p>
+
+        <h2 id="instalacion-verificacion">Verificación</h2>
+        <p>Checklist de verificación.</p>
+      </section>
+
+      <section class="doc" data-doc="usuario">
+        <h1 id="usuario">Manual de usuario</h1>
+
+        <h2 id="usuario-inicio">Inicio rápido</h2>
+        <p>Contenido de ejemplo.</p>
+
+        <h2 id="usuario-flujos">Flujos principales</h2>
+        <h3 id="usuario-flujos-1">Flujo A</h3>
+        <p>Explicación.</p>
+        <h3 id="usuario-flujos-2">Flujo B</h3>
+        <p>Explicación.</p>
+
+        <h2 id="usuario-faq">FAQ</h2>
+        <p>Preguntas frecuentes.</p>
+      </section>
+
+      <section class="doc" data-doc="operacion">
+        <h1 id="operacion">Manual de operación / control</h1>
+
+        <h2 id="operacion-monitoreo">Monitoreo</h2>
+        <p>Contenido de ejemplo.</p>
+
+        <h2 id="operacion-incidencias">Gestión de incidencias</h2>
+        <h3 id="operacion-incidencias-1">Detección</h3>
+        <p>Explicación.</p>
+        <h3 id="operacion-incidencias-2">Escalado</h3>
+        <p>Explicación.</p>
+
+        <h2 id="operacion-mantenimiento">Mantenimiento</h2>
+        <p>Tareas periódicas.</p>
+      </section>
+    </main>
+  </div>
+
+  <div id="searchResults" class="search-results" role="dialog" aria-label="Resultados de búsqueda" aria-modal="false"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
